@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libASIFT\compute_asift_keypoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\computeH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\demo_lib_sift.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\domain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\flimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\fproj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\frot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\homography.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\libASIFT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\library.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\numerics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\numerics1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\rodrigues.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\splines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libASIFT\vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libASIFT\compute_asift_keypoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\demo_lib_sift.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\domain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\flimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\fproj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\frot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\homography.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\libASIFT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\library.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\numerics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\numerics1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\rodrigues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libASIFT\splines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="libASIFT\LICENSE.txt" />
+    <Text Include="libASIFT\README.txt" />
+  </ItemGroup>
+</Project>
