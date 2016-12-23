@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2EFE055B-CF93-4D02-B48D-F92296177027}</ProjectGuid>
+    <ProjectGuid>{E920891E-F908-47C6-B519-AB974038073A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>libASIFT</RootNamespace>
+    <RootNamespace>GPUASIFT</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -45,7 +45,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -80,6 +80,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -137,7 +138,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalIncludeDirectories>../libASIFT-GPU/libASIFT</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,45 +148,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="libASIFT\computeH.cpp" />
-    <ClCompile Include="libASIFT\compute_asift_keypoints.cpp" />
-    <ClCompile Include="libASIFT\demo_lib_sift.cpp" />
-    <ClCompile Include="libASIFT\domain.cpp" />
-    <ClCompile Include="libASIFT\filter.cpp" />
-    <ClCompile Include="libASIFT\flimage.cpp" />
-    <ClCompile Include="libASIFT\fproj.cpp" />
-    <ClCompile Include="libASIFT\frot.cpp" />
-    <ClCompile Include="libASIFT\homography.cpp" />
-    <ClCompile Include="libASIFT\libASIFT.cpp" />
-    <ClCompile Include="libASIFT\library.cpp" />
-    <ClCompile Include="libASIFT\matrix.cpp" />
-    <ClCompile Include="libASIFT\numerics.cpp" />
-    <ClCompile Include="libASIFT\numerics1.cpp" />
-    <ClCompile Include="libASIFT\rodrigues.cpp" />
-    <ClCompile Include="libASIFT\splines.cpp" />
-    <ClCompile Include="libASIFT\vector.cpp" />
+    <ProjectReference Include="..\libASIFT-GPU\libASIFT-GPU.vcxproj">
+      <Project>{92c4bc06-ff1d-4dd9-a6f2-b2e1805208d2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SIFTGPU\SIFTGPU.vcxproj">
+      <Project>{710c3310-df39-4c7b-bd8d-87bc0222f079}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="libASIFT\compute_asift_keypoints.h" />
-    <ClInclude Include="libASIFT\demo_lib_sift.h" />
-    <ClInclude Include="libASIFT\domain.h" />
-    <ClInclude Include="libASIFT\filter.h" />
-    <ClInclude Include="libASIFT\flimage.h" />
-    <ClInclude Include="libASIFT\fproj.h" />
-    <ClInclude Include="libASIFT\frame.h" />
-    <ClInclude Include="libASIFT\frot.h" />
-    <ClInclude Include="libASIFT\homography.h" />
-    <ClInclude Include="libASIFT\libASIFT.h" />
-    <ClInclude Include="libASIFT\library.h" />
-    <ClInclude Include="libASIFT\matrix.h" />
-    <ClInclude Include="libASIFT\numerics.h" />
-    <ClInclude Include="libASIFT\numerics1.h" />
-    <ClInclude Include="libASIFT\rodrigues.h" />
-    <ClInclude Include="libASIFT\splines.h" />
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="libASIFT\LICENSE.txt" />
-    <Text Include="libASIFT\README.txt" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,5 @@
+EXPORTS
+   CreateNewSiftGPU @1
+   CreateNewSiftMatchGPU @2
+   CreateComboSiftGPU @3
+   CreateLiteWindow @4

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SIFTGPU\CLTexImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\CuTexImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\FrameBufferObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\GlobalUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\GLTexImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\ProgramCG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\ProgramCL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\ProgramGLSL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\ProgramGPU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\PyramidCL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\PyramidCU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\PyramidGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\ShaderMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\SiftGPU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\SiftMatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\SiftMatchCU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SIFTGPU\SiftPyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SIFTGPU\CLTexImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\CuTexImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\FrameBufferObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\GlobalUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\GLTexImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\LiteWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\ProgramCG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\ProgramCL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\ProgramCU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\ProgramGLSL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\ProgramGPU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\PyramidCL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\PyramidCU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\PyramidGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\ShaderMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\SiftGPU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\SiftMatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\SiftMatchCU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIFTGPU\SiftPyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SiftGPU.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="SIFTGPU\ProgramCU.cu" />
+  </ItemGroup>
+</Project>
